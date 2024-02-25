@@ -1,12 +1,18 @@
-import "../styles/Header.scss";
+import { useState } from "react";
+
+import MobileMenu from "./MobileMenu";
+
+import "../../styles/Header.scss";
 
 const Header = () => {
   return (
     <div className="header">
+      <MobileMenu />
+
       <a href="#" className="logo">
         room
       </a>
-      <nav>
+      <nav className="desktop-menu">
         <a href="#">home</a>
         <a href="#">shop</a>
         <a href="#">about</a>
