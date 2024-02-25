@@ -44,4 +44,10 @@
       transform-origin: center;
     }
   }
+
+  @media screen and (max-width: 800px) {
+    .desktop-menu {
+      display: none;
+    }
+  }
 }
