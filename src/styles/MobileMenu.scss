@@ -30,6 +30,14 @@
   }
 
   .showMenu {
+    nav {
+      a {
+        color: #000000;
+      }
+      a::after {
+        background-color: #000000;
+      }
+    }
     .close {
       cursor: pointer;
     }
@@ -40,10 +48,10 @@
     animation: 0.1s showMenu;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 980px) {
     .hamburger {
       display: block;
-      background-color: black;
+
       cursor: pointer;
       width: min-content;
     }

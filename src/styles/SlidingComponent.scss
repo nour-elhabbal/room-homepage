@@ -1,0 +1,101 @@
+@use "./variables.scss";
+
+//begin tablet design from 980px
+
+.slidingComponent {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  height: 60%;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+
+  .heroImage {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .image-1 {
+    background-image: url("../images/desktop-image-hero-1.jpg");
+    animation: 1s zoomOut-1;
+  }
+  .image-2 {
+    background-image: url("../images/desktop-image-hero-2.jpg");
+    animation: 1s zoomOut-2;
+  }
+  .image-3 {
+    background-image: url("../images/desktop-image-hero-3.jpg");
+    animation: 1s zoomOut-3;
+  }
+
+  .article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    div {
+      &:first-child {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        margin: auto;
+        padding: 0 10%;
+
+        height: 50%;
+
+        h1 {
+          font-size: 40px;
+
+          @media screen and (max-width: 1050px) {
+            font-size: 30px;
+          }
+        }
+
+        p {
+          color: variables.$Dark-Gray;
+        }
+
+        a {
+          transition: 0.2s ease-in-out;
+          cursor: pointer;
+
+          font-size: 24px;
+          letter-spacing: 8px;
+
+          &:hover {
+            transition: 0.2s ease-in-out;
+            letter-spacing: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes zoomOut-1 {
+  0% {
+    background-size: 120%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+@keyframes zoomOut-2 {
+  0% {
+    background-size: 120%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+@keyframes zoomOut-3 {
+  0% {
+    background-size: 120%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
