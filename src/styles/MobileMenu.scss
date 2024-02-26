@@ -1,4 +1,6 @@
 .mobileMenu {
+  // display: none
+
   .hamburger {
     display: none;
   }
@@ -18,15 +20,15 @@
 
     padding: 10px 20px;
 
-    width: calc(100% - 40px);
+    width: 97vw;
     height: 80px;
 
     position: absolute;
-    left: 0;
-    top: 0;
+    top: -50px;
+    left: -50px;
 
     background-color: white;
-    box-shadow: 10px -9px 0px 400px rgba(129, 129, 129, 0.75);
+    box-shadow: 10px -9px 0px 200vh rgba(129, 129, 129, 0.75);
   }
 
   .showMenu {
@@ -54,6 +56,10 @@
 
       cursor: pointer;
       width: min-content;
+    }
+
+    .showMenu {
+      width: 90vw;
     }
   }
 }

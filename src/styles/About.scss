@@ -4,10 +4,10 @@
   grid-template-columns: 1fr 1.2fr 1fr;
   height: 40%;
   position: absolute;
-  bottom: 0;
+  // bottom: 0;
+  // margin: 50px 0;
 
   .content {
-    // margin: auto;
     padding: 50px;
     display: flex;
     flex-direction: column;
@@ -35,5 +35,17 @@
   }
   .img2 {
     background-image: url("../images/image-about-light.jpg");
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    height: 920px;
+  }
+  .img1,
+  .img2 {
+    height: 360px;
   }
 }
