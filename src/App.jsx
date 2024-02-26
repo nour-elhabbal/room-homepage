@@ -1,9 +1,14 @@
-import Header from "./components/Header";
+import { SliderContextProvider } from "./context/sliderContext";
 
+import Header from "./components/Header/Header";
+import SlidingComponent from "./components/SlidingComponent";
 const App = () => {
   return (
-    <div>
+    <div className="app">
       <Header />
+      <SliderContextProvider>
+        <SlidingComponent />
+      </SliderContextProvider>
     </div>
   );
 };
