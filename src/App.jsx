@@ -2,6 +2,7 @@ import { SliderContextProvider } from "./context/sliderContext";
 
 import Header from "./components/Header/Header";
 import SlidingComponent from "./components/SlidingComponent";
+import About from "./components/About";
 const App = () => {
   return (
     <div className="app">
@@ -9,6 +10,7 @@ const App = () => {
       <SliderContextProvider>
         <SlidingComponent />
       </SliderContextProvider>
+      <About />
     </div>
   );
 };
