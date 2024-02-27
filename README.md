@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL:](https://github.com/nour-elhabbal/room-homepage)
-- [Live Site URL:](https://room-homepage-nourelhabbal.vercel.app/)
+- Solution - [URL](https://github.com/nour-elhabbal/room-homepage)
+- Live Site - [URL](https://room-homepage-nourelhabbal.vercel.app/)
 
 ## My process
 
