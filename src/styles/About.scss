@@ -3,12 +3,10 @@
   display: grid;
   grid-template-columns: 1fr 1.2fr 1fr;
   height: 40%;
-  // position: absolute;
-  // bottom: 0;
-  // margin: 50px 0;
 
   .content {
     padding: 50px;
+
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -42,6 +40,7 @@
   .about {
     display: flex;
     flex-direction: column;
+    
     height: 920px;
 
     .article {

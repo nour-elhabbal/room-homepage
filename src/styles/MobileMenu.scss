@@ -1,6 +1,4 @@
 .mobileMenu {
-  // display: none
-
   .hamburger {
     display: none;
   }
@@ -52,14 +50,9 @@
 
   @media screen and (max-width: 980px) {
     .hamburger {
-      display: block;
-
       cursor: pointer;
+      display: block;
       width: min-content;
-    }
-
-    .showMenu {
-      // width: 100vw;
     }
   }
 }
@@ -77,11 +70,9 @@
 @keyframes hideMenu {
   0% {
     transform: scaleX(1);
-    transform-origin: left;
   }
 
   100% {
     transform: scaleX(0);
-    transform-origin: left;
   }
 }
